@@ -100,15 +100,22 @@ composition-assistant/
 ├── main_nogui.py
 └── requirements.txt
 ```
+### 下载模型
+按照结构图下载model.safetensors、pytorch_model.bin、embeddings.pt
 ### 安装依赖
-推荐运行环境 Python3.12.6
+- 推荐运行环境 Python3.12.6
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 启动训练
+- 普通训练
 ```bash
 python -m src.model_trainer
+```
+- 你也可以自行调整训练次数及大小
+```bash
+python -m src.model_trainer --epochs 15 --batch_size 32
 ```
 
 ### 运行NoGUI
