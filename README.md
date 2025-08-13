@@ -28,9 +28,8 @@
 {
   "content": "真正的太空探索不是为霸权，而是为人类共同梦想",
   "source": "中国航天白皮书",
-  "type": "examples",
-  "theme": "科技创新",
   "keywords": ["航天精神", "人类命运共同体", "探索精神"]
+  "theme": "科技创新",
 }
 ```
 
@@ -40,6 +39,67 @@
 
 ---
 ## 🚀 快速开始
+### 项目结构
+```
+composition-assistant/
+├── data/
+│   ├── examples.json
+│   ├── poems.json
+│   └── quotes.json
+│
+├── model/
+│   ├── embeddings.pt   #下载huggingface上预训练好的模型（HJWZH/composition-assistant）
+│   ├── metadata.json
+│   ├── tfidf_vectorizer.pkl
+│   │
+│   ├── fine_tuned/
+│   │   ├── 1_Pooling/
+│   │   │   └── config.json
+│   │   │
+│   │   ├── config.json
+│   │   ├── config_sentence_transformers.json
+│   │   ├── model.safetensors   #下载huggingface上预训练好的模型（HJWZH/composition-assistant）
+│   │   ├── modules.json
+│   │   ├── sentence_bert_config.json
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer.json
+│   │   ├── tokenizer_config.json
+│   │   └── vocab.txt
+│   │
+│   └── pretrained/
+│       ├── config.json
+│       ├── pytorch_model.bin   #下载huggingface的模型（uer/chinese_roberta_L-12_H-768）
+│       ├── tokenizer_config.json
+│       └── vocab.txt
+│
+├── src/
+│   ├── __pycache__/
+│   │   ├── cli_interface.cpython-312.pyc
+│   │   ├── data_processor.cpython-312.pyc
+│   │   ├── date_loader.cpython-312.pyc
+│   │   ├── gui_interface.cpython-312.pyc
+│   │   ├── model_loader.cpython-312.pyc
+│   │   ├── model_trainer.cpython-312.pyc
+│   │   ├── search_engine.cpython-312.pyc
+│   │   ├── semantic_search.cpython-312.pyc
+│   │   └── __init__.cpython-312.pyc
+│   │
+│   ├── cli_interface.py
+│   ├── data_processor.py
+│   ├── date_loader.py
+│   ├── gui_interface.py
+│   ├── model_loader.py
+│   ├── model_trainer.py
+│   ├── search_engine.py
+│   ├── semantic_search.py
+│   └── __init__.py
+│
+├── .gitignore
+├── gui_main.py
+├── main.py
+├── main_nogui.py
+└── requirements.txt
+```
 ### 安装依赖
 推荐运行环境 Python3.12.6
 ```bash
