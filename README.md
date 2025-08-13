@@ -20,4 +20,26 @@
 }
 
 ## TODO List
-1.素材自动更新
+- 1.素材自动更新
+
+## 🚀 快速开始
+### 安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+### 启动训练
+```bash
+python -m src.model_trainer
+```
+
+### 运行GUI
+```bash
+python gui_main.py
+```
+
+## 🤝 加入我们
+欢迎贡献素材库或改进算法：
+1. 提交PR更新`data/`目录下的JSON文件
+2. 优化模型见`src/model_trainer.py`
+3. 扩展主题词库在`src/semantic_search.py`的THEME_KEYWORDS
