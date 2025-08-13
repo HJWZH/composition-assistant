@@ -1,6 +1,6 @@
 # 文思引擎 - 智能作文素材检索系统
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.12%2B-blue)]()
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
 
 ## ✨ 项目亮点
@@ -18,12 +18,14 @@
   "theme": "科技创新",
   "keywords": ["航天精神", "人类命运共同体", "探索精神"]
 }
+```
 
 ## TODO List
-- 1.素材自动更新
+- **1.素材自动更新**
 
 ## 🚀 快速开始
 ### 安装依赖
+推荐运行环境Python3.12.6
 ```bash
 pip install -r requirements.txt
 ```
@@ -31,6 +33,11 @@ pip install -r requirements.txt
 ### 启动训练
 ```bash
 python -m src.model_trainer
+```
+
+### 运行NoGUI
+```bash
+python main.py
 ```
 
 ### 运行GUI
