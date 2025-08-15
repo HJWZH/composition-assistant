@@ -50,7 +50,6 @@ composition-assistant/
 ├── model/
 │   ├── embeddings.pt   #下载huggingface上预训练好的模型（HJWZH/composition-assistant）
 │   ├── metadata.json
-│   ├── tfidf_vectorizer.pkl
 │   │
 │   ├── fine_tuned/
 │   │   ├── 1_Pooling/
@@ -120,7 +119,7 @@ python -m src.model_trainer --epochs 15 --batch_size 32
 
 ### 运行NoGUI
 ```bash
-python main.py
+python main_nogui.py
 ```
 
 ### 运行GUI
