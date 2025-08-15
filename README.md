@@ -103,9 +103,18 @@ composition-assistant/
 按照结构图下载model.safetensors、pytorch_model.bin、embeddings.pt
 ### 安装依赖
 - 推荐运行环境 Python3.12.6
+- 1.对于NVIDIA用户(安装CUDA Tookit)
 ```bash
 pip install -r requirements.txt
 ```
+- 2.对于非NVIDIA用户(CPU和AMD用户)
+安装torch、torchversion的CPU版本
+或运行:
+```bash
+pip install -r requirements_nocuda.txt
+```
+- 3.对于Windows10以下用户
+请自行安装合适的pytorch版本
 
 ### 启动训练
 - 普通训练
