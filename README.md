@@ -101,19 +101,24 @@ composition-assistant/
 ```
 ### 下载模型
 按照结构图下载model.safetensors、pytorch_model.bin、embeddings.pt
-### 安装依赖
+### 配置安装
 - 推荐运行环境 Python3.12.6
-- 1.对于NVIDIA用户(安装CUDA Tookit)
+- #### 一.克隆项目仓库
+```bash
+git clone https://github.com/hjwzh/composition-assistant.git
+cd composition-assistant
+```
+- #### 二.1.对于NVIDIA用户(安装CUDA Tookit)
 ```bash
 pip install -r requirements.txt
 ```
-- 2.对于非NVIDIA用户(CPU和AMD用户)
+- #### 二.2.对于非NVIDIA用户(CPU和AMD用户)
 安装torch、torchversion的CPU版本
 或运行:
 ```bash
 pip install -r requirements_nocuda.txt
 ```
-- 3.对于Windows10以下用户
+- #### 二.3.对于Windows10以下用户
 请自行安装合适的pytorch版本
 
 ### 启动训练
