@@ -40,7 +40,7 @@ def main():
         cache_path = os.path.join(os.path.expanduser("~"), ".cache", "huggingface", "hub")
         if os.path.exists(cache_path):
             logger.info(f"检测到Hugging Face缓存目录: {cache_path}")
-            logger.info("请运行: python organize_model.py")
+            #logger.info("请运行: python organize_model.py")
         return
     
     # 检查是否有微调模型
@@ -51,7 +51,9 @@ def main():
     print(f"CUDA可用: {torch.cuda.is_available()}")
     if torch.cuda.is_available():
         print(f"GPU设备: {torch.cuda.get_device_name(0)}")
-    
+
+    print("作文素材AI检索系统\n版本: 1.0.0\n基于深度学习技术的作文素材检索工具，帮助用户快速找到相关名言、事例和古诗文素材。\nHJWZH(WZH)制作 , 项目已开源 , 遵循MIT协议 , See it on 'https://github.com/HJWZH/composition-assistant'")
+
     # 启动命令行界面
     cli = CLIInterface(model_dir="model", use_fine_tuned=use_fine_tuned)
     cli.run()

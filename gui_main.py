@@ -26,7 +26,7 @@ def resource_path(relative_path):
 class MaterialSearchApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("作文素材智能检索系统 V1.0.0 By WZH & ZYH 已开源")
+        self.setWindowTitle("作文素AI检索系统 V1.0.0 By WZH 已开源(可按Ctrl+Q退出)")
         self.setGeometry(100, 100, 1440, 720)
         
         # 设置应用程序图标
@@ -280,9 +280,9 @@ class MaterialSearchApp(QMainWindow):
     def show_about(self):
         """显示关于对话框"""
         about_text = """
-        <h2>作文素材智能检索系统</h2>
+        <h2>作文素材AI检索系统</h2>
         <p>版本: 1.0.0</p>
-        <p>基于深度学习技术的作文素材检索工具，帮助用户快速找到相关名言、事例和古诗文素材。</p>
+        <p>基于深度学习AI技术的作文素材检索工具，帮助用户快速找到相关名言、事例和古诗文素材。</p>
         <p>技术栈：</p>
         <ul>
             <li>PyTorch: {}</li>
@@ -295,7 +295,7 @@ class MaterialSearchApp(QMainWindow):
             <li>Python: {}</li>
             <li>设备: {}</li>
         </ul>
-        <p>HJWZH(WZH) & ZYH 制作 , 项目已开源 , 遵循MIT协议 , See it on <a href='https://github.com/HJWZH/composition-assistant'>GitHub</a></p>
+        <p>HJWZH(WZH)  制作 , 项目已开源 , 遵循MIT协议 , See it on <a href='https://github.com/HJWZH/composition-assistant'>GitHub</a></p>
         """.format(
             torch.__version__,
             platform.platform(),
