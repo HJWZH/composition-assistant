@@ -1,4 +1,4 @@
-# 文思引擎 - 智能作文素材检索系统
+# 文思引擎 - AI 作文素材检索系统
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
 [![Windows Support](https://img.shields.io/badge/Windows-10%2B-success)]()
